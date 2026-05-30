@@ -1,0 +1,26 @@
+source,dimension,mean,median,sd,min,max
+Cycle Researcher,quality,1.0,1.0,0.0,1,1
+Cycle Researcher,clarity,1.6,2.0,0.5070925528371101,1,2
+Cycle Researcher,significance,1.0,1.0,0.0,1,1
+Cycle Researcher,originality,1.3333333333333333,1.0,0.48795003647426666,1,2
+Cycle Researcher,overall,1.0,1.0,0.0,1,1
+Data-to-Paper,quality,1.0666666666666667,1.0,0.25819888974716115,1,2
+Data-to-Paper,clarity,1.8666666666666667,2.0,0.3518657752744984,1,2
+Data-to-Paper,significance,1.0,1.0,0.0,1,1
+Data-to-Paper,originality,1.0666666666666667,1.0,0.25819888974716115,1,2
+Data-to-Paper,overall,1.0666666666666667,1.0,0.25819888974716115,1,2
+FARS,quality,2.0,2.0,0.0,2,2
+FARS,clarity,2.8666666666666667,3.0,0.35186577527449836,2,3
+FARS,significance,2.0,2.0,0.3779644730092272,1,3
+FARS,originality,2.0,2.0,0.0,2,2
+FARS,overall,2.2666666666666666,2.0,0.45773770821706344,2,3
+Sakana v1,quality,1.0,1.0,0.0,1,1
+Sakana v1,clarity,1.4,1.0,0.5070925528371101,1,2
+Sakana v1,significance,1.0,1.0,0.0,1,1
+Sakana v1,originality,1.0,1.0,0.0,1,1
+Sakana v1,overall,1.0,1.0,0.0,1,1
+Sakana v2,quality,1.0,1.0,0.0,1,1
+Sakana v2,clarity,1.1333333333333333,1.0,0.35186577527449836,1,2
+Sakana v2,significance,1.0,1.0,0.0,1,1
+Sakana v2,originality,1.1333333333333333,1.0,0.35186577527449836,1,2
+Sakana v2,overall,1.0,1.0,0.0,1,1
