@@ -159,7 +159,7 @@ This directory contains reviewer-side outputs and evaluation artifacts.
 | Folder | Description |
 |---|---|
 | [`Results_pilot_set/`](./AI-Reviewer-outputs/Results_pilot_set/) | Pilot-set reviewer outputs, score tables, JSON exports, summary analyses, and comparison figures |
-| [`Results_full_set/`](./AI-Reviewer-outputs/Results_full_set/) | Reserved destination for future reviewer outputs and analyses associated with the full collection |
+| [`Results_full_set/`](./AI-Reviewer-outputs/Results_full_set/) | Reviewer outputs for the 18-proposal generalization batch (90 papers): raw export and per-paper score matrix |
 
 ---
 
@@ -178,7 +178,7 @@ Key files include:
 | [`submission_ids.csv`](./AI-Reviewer-outputs/Results_pilot_set/submission_ids.csv) | Submission and score tracking table |
 | [`analysis_ai_scientists_comparison/`](./AI-Reviewer-outputs/Results_pilot_set/analysis_ai_scientists_comparison/) | Summary statistics, comparison plots, tables, and downstream analysis artifacts |
 
-At present, the populated reviewer outputs are specific to the pilot collection. The full-collection reviewer folder has been created but is not yet populated with corresponding analysis files.
+Reviewer outputs for the pilot collection (75 papers) are in `Results_pilot_set/`, and those for the 18-proposal generalization batch (90 papers) are in `Results_full_set/`.
 
 ---
 
@@ -225,3 +225,18 @@ This repository provides a standardized, publication-facing organization of FARS
 - Reviewer outputs are separated cleanly from the paper corpora.
 
 The result is a repository structure intended to be legible to readers, collaborators, and reviewers associated with formal conference submissions.
+
+
+---
+
+## Reproducing the paper
+
+| Item | Location |
+|---|---|
+| Pilot set: 15 proposals x 5 systems = 75 papers | `AI-Scientist-generated-papers/pilot-paper-set/` |
+| Generalization batch: 18 proposals x 5 systems = 90 papers (33 proposals, 165 papers in total) | `AI-Scientist-generated-papers/needs_ai_reviewing_set/` (listed in `manifest.csv`) |
+| Per-paper score matrices | `AI-Reviewer-outputs/Results_pilot_set/results_scores.csv`, `AI-Reviewer-outputs/Results_full_set/results_scores.csv` |
+| Raw reviewer exports | `results.jsonl` in each results folder |
+| Reviewer models, dates, prompts, settings | [`reviewer_config/`](./reviewer_config/) |
+| Analysis script | [`analysis/reproduce_tables.py`](./analysis/reproduce_tables.py) (`python analysis/reproduce_tables.py` from the repository root) |
+| License and third-party notice | [`LICENSE`](./LICENSE) |
