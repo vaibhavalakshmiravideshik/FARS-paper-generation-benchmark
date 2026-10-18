@@ -240,3 +240,18 @@ The result is a repository structure intended to be legible to readers, collabor
 | Reviewer models, dates, prompts, settings | [`reviewer_config/`](./reviewer_config/) |
 | Analysis script | [`analysis/reproduce_tables.py`](./analysis/reproduce_tables.py) (`python analysis/reproduce_tables.py` from the repository root) |
 | License and third-party notice | [`LICENSE`](./LICENSE) |
+
+
+---
+
+## Reproducing the paper
+
+| Item | Location |
+|---|---|
+| Pilot set: 15 proposals x 5 systems = 75 papers | `AI-Scientist-generated-papers/pilot-paper-set/` |
+| Generalization batch: 18 proposals x 5 systems = 90 papers (33 proposals, 165 papers in total) | `AI-Scientist-generated-papers/needs_ai_reviewing_set/` (listed in `manifest.csv`) |
+| Per-paper score matrices | `AI-Reviewer-outputs/Results_pilot_set/results_scores.csv`, `AI-Reviewer-outputs/Results_full_set/results_scores.csv` |
+| Raw reviewer exports | `results.jsonl` in each results folder |
+| Reviewer models, dates, prompts, settings | [`reviewer_config/`](./reviewer_config/) |
+| Analysis script | [`analysis/reproduce_tables.py`](./analysis/reproduce_tables.py) (`python analysis/reproduce_tables.py` from the repository root) |
+| License and third-party notice | [`LICENSE`](./LICENSE) |

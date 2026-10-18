@@ -37,11 +37,12 @@ def table(df, label):
     ks = [k for _, k in ORDER if k != REF]; ps = []
     for k in ks:
         d = (w[k] - w[REF]).dropna()
+        if (d == 0).all(): ps.append(np.nan); continue          # identical scores on every proposal: no test defined (n/a)
         try: ps.append(wilcoxon(d, method="exact").pvalue)
         except ValueError: ps.append(np.nan)
     qs = bh(np.nan_to_num(ps, nan=1.0))
     for (lab, k), p, q in zip([o for o in ORDER if o[1] != REF], ps, qs):
         ptxt = "n/a (all differences zero)" if np.isnan(p) else ("<0.0001" if p < 1e-4 else f"{p:.4f}")
-        print(f"  vs Sakana v1: {lab:16s} p={ptxt:>8s}  q(BH)={q:.4f}")
+        print(f"  vs Sakana v1: {lab:16s} p={ptxt:>8s}  q(BH)={'n/a' if np.isnan(p) else format(q, '.4f')}")
 
 table(pilot, "Pilot (15 proposals)"); table(new, "Generalization batch (18 proposals)"); table(pd.concat([pilot, new]), "Combined (33 proposals)")
