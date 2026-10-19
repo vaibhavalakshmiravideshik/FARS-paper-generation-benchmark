@@ -4,7 +4,7 @@ The AI Reviewer is the GRAIL hosted multi-model review service. Each paper is re
 (GPT-5.4, Gemini 3.1 Pro, Claude Opus 4.6), using the same prompts for all three. Each model reviews in two passes
 (an initial review, then a self-calibration pass), and GPT-5.4 then writes a synthesis review that aggregates the three.
 Scores: Quality, Clarity, Significance and Originality on a 1-4 scale; Overall on a 1-6 scale; Confidence on a 1-5 scale.
-The prompts were identical for the pilot set and the generalization batch.
+The prompts were identical for the pilot set (reviewed 2026-04-15) and the generalization batch (reviewed 2026-07-15 to 2026-07-16).
 
 | File | Contents |
 |---|---|

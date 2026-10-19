@@ -1,6 +1,7 @@
 # Decoding settings
 
-Settings as configured in the AI Reviewer service, identical for the pilot set and the generalization batch.
+Settings as configured in the AI Reviewer service, as reported by the service operator for the generalization-batch run (2026-07-15 to 2026-07-16).
+The pilot set was reviewed on 2026-04-15 with the same prompts; its decoding settings were not separately recorded.
 Each reviewer model reviews a paper in two passes (Pass 1: initial review; Pass 2: self-calibration), using the
 same prompts for all three models. GPT-5.4 then writes the synthesis review.
 
